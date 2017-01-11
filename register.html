@@ -6,9 +6,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
 <head>
-    <title>Free Smart Store Website Template | FAQ :: w3layouts</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Free Smart Store Website Template | login :: w3layouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/slider.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
@@ -25,7 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         });
     </script>
 </head>
-<body>
+<body id="loc">
     <div class="wrap">
         <div class="header">
             <div class="header_top">
@@ -46,6 +46,105 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <span class="no_product">(empty)</span>
                             </a>
                         </div>
+                    </div>
+                    <div class="languages">
+                        <div id="language" class="wrapper-dropdown" tabindex="1">
+                            EN
+                            <strong class="opencart"> </strong>
+                            <ul class="dropdown languges">
+                                <li>
+                                    <a href="#" title="Français">
+                                        <span><img src="images/gb.png" alt="en" width="26" height="26"></span><span class="lang">English</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Français">
+                                        <span><img src="images/au.png" alt="fr" width="26" height="26"></span><span class="lang">Français</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Español">
+                                        <span><img src="images/bm.png" alt="es" width="26" height="26"></span><span class="lang">Español</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Deutsch">
+                                        <span><img src="images/ck.png" alt="de" width="26" height="26"></span><span class="lang">Deutsch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="$" title="Russian">
+                                        <span><img src="images/cu.png" alt="ru" width="26" height="26"></span><span class="lang">Russian</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                            function DropDown(el) {
+                                this.dd = el;
+                                this.initEvents();
+                            }
+                            DropDown.prototype = {
+                                initEvents: function () {
+                                    var obj = this;
+
+                                    obj.dd.on('click', function (event) {
+                                        $(this).toggleClass('active');
+                                        event.stopPropagation();
+                                    });
+                                }
+                            }
+
+                            $(function () {
+
+                                var dd = new DropDown($('#language'));
+
+                                $(document).click(function () {
+                                    // all dropdowns
+                                    $('.wrapper-dropdown').removeClass('active');
+                                });
+
+                            });
+
+                        </script>
+                    </div>
+                    <div class="currency">
+                        <div id="currency" class="wrapper-dropdown" tabindex="1">
+                            $
+                            <strong class="opencart"> </strong>
+                            <ul class="dropdown">
+                                <li><a href="#"><span>$</span>Dollar</a></li>
+                                <li><a href="#"><span>€</span>Euro</a></li>
+                            </ul>
+                        </div>
+                        <script type="text/javascript">
+                            function DropDown(el) {
+                                this.dd = el;
+                                this.initEvents();
+                            }
+                            DropDown.prototype = {
+                                initEvents: function () {
+                                    var obj = this;
+
+                                    obj.dd.on('click', function (event) {
+                                        $(this).toggleClass('active');
+                                        event.stopPropagation();
+                                    });
+                                }
+                            }
+
+                            $(function () {
+
+                                var dd = new DropDown($('#currency'));
+
+                                $(document).click(function () {
+                                    // all dropdowns
+                                    $('.wrapper-dropdown').removeClass('active');
+                                });
+
+                            });
+
+                        </script>
                     </div>
                     <div class="login">
                         <span><a href="login.html"><img src="images/login.png" alt="" title="login" /></a></span>
@@ -173,7 +272,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </ul>
                     </li>
                     <li>
-                        <a href="products.html">Brands</a>
+                        <a href="products.html">Top Brands</a>
                         <ul>
                             <li><a href="products.html">Brand Name 1</a></li>
                             <li><a href="products.html">Brand Name 2</a></li>
@@ -187,57 +286,67 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li><a href="#">Brand Name 10</a></li>
                         </ul>
                     </li>
-
+                    <li>
+                        <a href="faq.html">Services</a>
+                        <ul>
+                            <li>
+                                <a href="#">Service 1</a>
+                                <ul>
+                                    <li><a href="#">Service Detail A</a></li>
+                                    <li><a href="#">Service Detail B</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Service 2</a>
+                                <ul>
+                                    <li><a href="#">Service Detail C</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Service 3</a>
+                                <ul>
+                                    <li><a href="#">Service Detail D</a></li>
+                                    <li><a href="#">Service Detail E</a></li>
+                                    <li><a href="#">Service Detail F</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Service 4</a></li>
+                        </ul>
+                    </li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="#">Delivery</a></li>
                     <li><a href="faq.html">FAQS</a></li>
                     <li><a href="contact.html">Contact</a> </li>
                     <div class="clear"></div>
                 </ul>
             </div>
+
         </div>
         <div class="main">
             <div class="content">
-                <h2>Các câu hỏi thường gặp</h2>
-                <div class="questions">
-                    <h4>1.Tôi muốn mua hàng phải làm sao?</h4>
-                    <p>Quý khách muốn mua hàng trên Alesis vui lòng đặt hàng theo từng bước website hướng dẫn (rất đơn giản và dễ dàng). Sau khi đặt hàng thành công quý khách có thể chọn lựa hình thức thanh toán cho phù hợp với quý khách. Alesis  đang chấp nhận các hình thức thanh toán: chuyển khoản qua bưu điện, ngân hàng, thanh toán trực tiếp bằng thẻ ATM Đông Á, Vietcombank… Ngoài ra Alesis còn có hình thức thanh toán COD – giao hàng và nhận tiền tận nơi. Hình thức này hiện đang thử nghiệm và áp dụng tại các tỉnh thành phố lớn . Sau khi quý khách đặt đơn hàng và thanh toán. Quý khách vui lòng ghi nhớ mã số đơn hàng để dễ dàng kiểm tra và theo dõi tình trạng đơn hàng.</p>
+                <div class="register_account">
+                    <h3>Đăng ký thành viên</h3>
+                    <form>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div><input type="text" value="User Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"></div>
+                                        <div><input type="text" value="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"></div>
+                                        <div><input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></div>
+                                        <div><input type="text" value="E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-Mail';}"></div>
+                                        <div><input type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></div>
+
+                                    </td>                                  
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="search"><div><button class="grey">Đăng ký</button></div></div>
+                        <!--<p class="terms">By clicking 'Create Account' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>-->
+                        <div class="clear"></div>
+                    </form>
                 </div>
-                <div class="questions">
-                    <h4>2.Sao tôi có thể tin tưởng khi chuyển tiền rồi, tôi sẽ nhận được hàng?</h4>
-                    <p>Khác với các website không rõ nguồn gốc,  Alesis  là website thương mại điện tử của Công ty TNHH MTV ĐTPT CN Kim Hải . Các thông tin về công ty chúng tôi đều công bố rộng rãi trên website và thông tin đại chúng. Ngoài ra Alesis còn là đối tác thanh toán của các ngân hàng Vietcombank, DongA Bank… và các công ty thanh toán Bảo Kim, Ngân Lượng. Chúng tôi cam kết đảm bảo là sẽ nhanh chóng liên hệ và gửi hàng cho quý khách khi nhận được tiền thanh toán đơn hàng. Alesis đã có hơn vài trăm đơn hàng thành công trong năm nay và chưa từng có 01 trường hợp khách hàng than phiền về việc đã chuyển tiền và không nhận được hàng. Uy tín và đảm bảo chất lượng hàng hóa là tiêu chuẩn hàng đầu của Alesis.</p>
-                </div>
-                <div class="questions">
-                    <h4>3.Bao lâu tôi nhận được hàng?</h4>
-                    <p>Tùy thuộc vào địa chỉ nhận hàng của quý khách mà thời gian nhận hàng trong vòng 24h đến 72h trong thời gian làm việc. Với các trường hợp COD, Alesis sẽ liên hệ với quý khách để xác nhận thời gian giao hàng chính xác. Quý khách có thể xem thêm chi tiết trong phần chính sách vận chuyển và giao hàng. </p>
-                </div>
-                <div class="questions">
-                    <h4>4.Tôi không đặt đơn hàng, tôi muốn đặt qua điện thoại luôn được không?</h4>
-                    <p>Được. Tuy nhiên chúng tôi vẫn khuyến khích Quý khách vui lòng đặt đơn hàng để có số đơn hàng. Với số đơn hàng này quý khách có thể dễ dàng nắm được các thông tin vận chuyển, hàng hóa trong đơn hàng và các chương trình khuyến mãi của Alesis. Quý khách an tâm là cách thức đặt đơn hàng rất dễ dàng và nhanh chóng.</p>
-                </div>
-                <div class="questions">
-                    <h4>5.Hàng hóa trên KimHai Computer có đảm bảo chất lượng và mẫu mã không?</h4>
-                    <p>Hàng hóa trên Alesis  là các sản phẩm chính hãng được phân phối tại Việt Nam có giấy tờ hợp lệ, chưa bao gồm VAT. Sản phẩm được bảo hành ở Alesis hoặc các đại diện của hãng ở toàn quốc. Chất lượng và các phần liên quan được đảm bảo.</p>
-                </div>
-                <div class="questions">
-                    <h4>6.Tôi phải chuyển tiền sao, bỏ tiền vô phong bì gửi tới công ty?</h4>
-                    <p>Quý khách có thể chọn hình thức thanh toán cho phù hợp như chuyển tiền bưu điện hoặc ngân hàng. Trong trường hợp chọn thanh toán qua bưu điện, quý khách vui lòng liên hệ với nhân viên bưu điện để chuyển tiền cho Alesis, không nên bỏ tiền vào phong bì chuyển tiền sẽ dễ bị thất lạc, Alesis sẽ không chịu trách nhiệm các trường hợp mất tiền khi bỏ tiền vào phong bì.</p>
-                </div>
-                <div class="questions">
-                    <h4>7.Tôi thanh toán rồi làm sao biết tiền của tôi KimHai Computer  đã được nhận được ? Khi nào tôi nhận được hàng?</h4>
-                    <p>Khi Alesis đã nhận được tiền, chúng tôi sẽ liên hệ với quý khách bằng điện thoại hoặc email để thông báo đã nhận được tiền và xác nhận chuyển hàng cho quý khách. Tùy thuộc vào địa chỉ nhận hàng của quý khách mà thời gian nhận hàng trong vòng 24h đến 72h trong thời gian làm việc.</p>
-                </div>
-                <div class="questions">
-                    <h4>8.Tại sao giờ hàng của tôi vẫn chưa nhận được?</h4>
-                    <p>Tùy thuộc vào địa chỉ nhận hàng của quý khách mà thời gian nhận hàng trong vòng 24h đến 72h trong thời gian làm việc. Tuy nhiên trong một số trường hợp phát sinh ngoài ý muốn (địa chỉ giao hàng không chính xác, không có người nhận, không liên hệ được với người nhận hàng…) không đúng thời gian. Quý khách vui lòng liên hệ với chúng tôi, chúng tôi sẽ kiểm tra với công ty vận chuyển để xác nhận thông tin & giao hàng lại cho quý khách trong thời gian sớm nhất.</p>
-                </div>
-                <div class="questions">
-                    <h4>9.Tôi mua hàng rồi, không vừa ý có thể đổi lại hay không?</h4>
-                    <p>Trừ các trường hợp đổi hàng do khác size, khác màu… và các trường hợp khác lỗi phát sinh từ phía Alesis. Hàng được đổi phải đảm bảo còn mới 100% chưa được sử dụng. Alesis không cho phép các trường hợp đổi hàng đã sử dụng qua hoặc các trường hợp trả lại hàng.</p>
-                </div>
-                <div class="questions">
-                    <h4>10.Trường hợp hàng hóa bị hư hỏng trong thời gian bảo hành thì tôi phải làm như thế nào ?</h4>
-                    <p>Trong trường hợp hàng hóa có lỗi trong quá trình sử dụng quý khách có thể đến các trung tâm bảo hành toàn quốc của thương hiệu đó để bảo hành hoặc gửi về cho Alesis. Chúng tôi sẽ có trách nhiệm bảo hành cho quý khách với các điều kiện bảo hành được đảm bảo.</p>
-                </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>

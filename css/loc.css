@@ -1,0 +1,11 @@
+﻿
+#loc .content{
+    padding:40px;
+}
+#loc .login_panel, #loc .register_account{
+    float:none;
+    margin:0 auto;
+}
+#loc .register_account{
+    width:30%;
+}
