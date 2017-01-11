@@ -519,8 +519,22 @@ p.note{
 	margin-left:1%;
 	padding-top: 15px;
 }
+.left-content{
+	width: 15%;
+    background-color: rgb(110, 77, 43);
+    display: inline-block;
+    height: 100vh;
+    color: #fff;
+    float: left;
+    margin-right: 3%;
+    padding: 20px;
+}
+.main-content{
+	display: inline-block;
+    width: 79%;
+}
 .content{
-	padding:20px 0;
+	
 	background:#FFF;
 }
 .content h2{ 
