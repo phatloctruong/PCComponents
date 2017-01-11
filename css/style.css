@@ -34,10 +34,22 @@ body{
 }
 .wrap{
 	width:78%;
-	margin:0 auto;
+	margin:12% auto;
 	padding:0 1%;
 	background:#FFF;
 }
+.wrap table{
+	text-align: center;
+	margin: 0 auto;
+}
+.wrap h1{
+	font-size: 30px;
+	text-align: center;
+}
+.wrap input[type="text"], .wrap input[type="submit"]{
+	margin-top: 10px;
+}
+
 .header{
 	background:#FFF;
 }
@@ -1300,6 +1312,9 @@ p.note{
 /*  Contact Form  ============================================================================= */
 .support{
 	padding:1.5%;
+}
+.user_contact{
+	margin-top: 5%;
 }
 .support_desc{
 	float:left;
