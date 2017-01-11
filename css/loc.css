@@ -1,11 +1,50 @@
 ﻿
-#loc .content{
-    padding:40px;
+#loc .content {
+    padding: 40px;
 }
-#loc .login_panel, #loc .register_account{
+
+#loc .login_panel, #loc .register_account {
+    float: none;
+    margin: 0 auto;
+}
+
+#loc .register_account {
+    width: 50%;
+}
+
+#loc .information span {
+    font-weight: bold;
+    width: 200px;
+    display: inline-block;
+   margin-bottom:10px;
+}
+#loc .search{
     float:none;
-    margin:0 auto;
+    margin-top:20px;
 }
-#loc .register_account{
-    width:30%;
+#loc .search div{
+    display:inline-block;
+}
+#loc .contact-form input[type="text"],#loc .contact-form input[type="number"],#loc .contact-form input[type="email"],#loc .contact-form input[type="password"]{
+		    padding:8px;
+			display:block;
+			width:220px;
+			background:#fcfcfc;
+			border: none;
+			outline:none;
+			color:#464646;
+			font-size:0.8125em;
+			font-family:Arial, Helvetica, sans-serif;
+			box-shadow: inset 0px 0px 3px #999;
+			-webkit-box-shadow: inset 0px 0px 3px #999;
+			-moz-box-shadow: inset 0px 0px 3px #999;
+			-o-box-shadow: inset 0px 0px 3px #999;
+			-webkit-appearance:none;
+}
+#loc .wrap input[type="text"],#loc .wrap input[type="number"],#loc .wrap input[type="email"],#loc .wrap input[type="password"]{
+        margin-top: 0;
+        margin-bottom:10px;
+}
+#loc .contact-form input[type="password"]{
+    display:inline-block;
 }
