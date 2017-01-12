@@ -48,3 +48,30 @@
 #loc .contact-form input[type="password"]{
     display:inline-block;
 }
+#loc .wrap table{
+    text-align:left;
+    margin:0;
+    margin-top:20px;
+}
+
+table#faq {
+    font-size:16px;    
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#faq td, #faq th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#faq tr:nth-child(even){background-color: #f2f2f2}
+
+#faq th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #8d5e2d;
+    color: white;
+}
